@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Student Manager</title>
+	<<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css" />
@@ -252,11 +253,7 @@
 				.done(function(response) {
 					var details = new Array();
 					details = $.parseJSON(response);
-					$('#ufname').val(details[1]);
-					$('#ulname').val(details[2]);
-					$('#uaddress').val(details[3]);
-
-					$('#uage').val(details[4]);
+					
 					$('#viewerror').html('');
 					UIkit.modal.dialog('<div class="uk-padding-large "><h5 class="font-montserrat uk-heading-divider">Student Details</h5><p class="font-ubuntu" style="font-size:14px">Student ID: '+details[0]+'</p><p class="font-ubuntu" style="font-size:14px">Name: '+details[1]+' '+details[2]+'</p><p class="font-ubuntu" style="font-size:14px">Address: '+details[3]+'</p><p class="font-ubuntu" style="font-size:14px">Age: '+details[4]+'</p><br><input type="button" class="uk-button uk-button-secondary uk-modal-close uk-text-right" value="close" /></div>');
 					console.log("success");
