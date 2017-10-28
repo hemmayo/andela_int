@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Student Manager</title>
-	<<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css" />
